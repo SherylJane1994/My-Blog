@@ -6,19 +6,20 @@
   
   <title>Generate SSH keys of Github &amp; link to Vscode | Welcome to Sheryl Jane&#39;s blog!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="check if already has SSH keys12cd ~&#x2F;.sshls &#x2F;&#x2F; show list of this file  generate a new SSH key1ssh-keygen -t rsa -C &quot;xx@xx.com&quot;  get the SSH key12cd ~&#x2F;.sshcat id_rsa.pub  go to the github and">
+  <meta name="description" content="check if already has SSH keys 12cd ~&#x2F;.sshls &#x2F;&#x2F; show list of this file  generate a new SSH key 1ssh-keygen -t rsa -C &quot;xx@xx.com&quot;  get the SSH key 12cd ~&#x2F;.sshcat id_rsa.pub  go to the github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Generate SSH keys of Github &amp; link to Vscode">
 <meta property="og:url" content="http://example.com/2024/03/07/Generate-SSH-keys-of-Github-link-to-Vscode/index.html">
 <meta property="og:site_name" content="Welcome to Sheryl Jane&#39;s blog!">
-<meta property="og:description" content="check if already has SSH keys12cd ~&#x2F;.sshls &#x2F;&#x2F; show list of this file  generate a new SSH key1ssh-keygen -t rsa -C &quot;xx@xx.com&quot;  get the SSH key12cd ~&#x2F;.sshcat id_rsa.pub  go to the github and">
+<meta property="og:description" content="check if already has SSH keys 12cd ~&#x2F;.sshls &#x2F;&#x2F; show list of this file  generate a new SSH key 1ssh-keygen -t rsa -C &quot;xx@xx.com&quot;  get the SSH key 12cd ~&#x2F;.sshcat id_rsa.pub  go to the github">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/images/image.png">
-<meta property="article:published_time" content="2024-03-07T04:38:07.000Z">
-<meta property="article:modified_time" content="2024-03-07T04:48:19.576Z">
+<meta property="og:image" content="http://example.com/imgs/addSSHKey.png">
+<meta property="og:image" content="http://example.com/imgs/signIn.png">
+<meta property="article:published_time" content="2024-03-07T04:56:24.000Z">
+<meta property="article:modified_time" content="2024-03-07T05:15:55.868Z">
 <meta property="article:author" content="Sheryl Jane">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/image.png">
+<meta name="twitter:image" content="http://example.com/imgs/addSSHKey.png">
   
     <link rel="alternate" href="/atom.xml" title="Welcome to Sheryl Jane's blog!" type="application/atom+xml">
   
@@ -76,7 +77,7 @@
         <section id="main"><article id="post-Generate-SSH-keys-of-Github-link-to-Vscode" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/03/07/Generate-SSH-keys-of-Github-link-to-Vscode/" class="article-date">
-  <time class="dt-published" datetime="2024-03-07T04:38:07.000Z" itemprop="datePublished">2024-03-07</time>
+  <time class="dt-published" datetime="2024-03-07T04:56:24.000Z" itemprop="datePublished">2024-03-07</time>
 </a>
     
   </div>
@@ -95,18 +96,29 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="check-if-already-has-SSH-keys"><a href="#check-if-already-has-SSH-keys" class="headerlink" title="check if already has SSH keys"></a>check if already has SSH keys</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">ls // show list of this file</span><br></pre></td></tr></table></figure>
-
-<h3 id="generate-a-new-SSH-key"><a href="#generate-a-new-SSH-key" class="headerlink" title="generate a new SSH key"></a>generate a new SSH key</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xx@xx.com&quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="get-the-SSH-key"><a href="#get-the-SSH-key" class="headerlink" title="get the SSH key"></a>get the SSH key</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure>
-
-<h3 id="go-to-the-github-and-add-the-SSH-key"><a href="#go-to-the-github-and-add-the-SSH-key" class="headerlink" title="go to the github and add the SSH key"></a>go to the github and add the SSH key</h3><p><img src="/images/image.png" alt="add the SSH key"></p>
+        <ol>
+<li><p>check if already has SSH keys</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">ls // show list of this file</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>generate a new SSH key</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xx@xx.com&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>get the SSH key</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>go to the github and add the SSH key<br><img src="/imgs/addSSHKey.png" alt="add the SSH key"></p>
+</li>
+<li><p>log in github account to vscode</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config -- global user.name &quot;xxx&quot;</span><br><span class="line">git config -- global user.email &quot;xxx@gmail.com&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>click settings sync button &amp; sign in<br><img src="/imgs/signIn.png" alt="sign in"></p>
+</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/07/Generate-SSH-keys-of-Github-link-to-Vscode/" data-id="cltgr09ua0000cb0tb4n3cagj" data-title="Generate SSH keys of Github &amp; link to Vscode" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/07/Generate-SSH-keys-of-Github-link-to-Vscode/" data-id="clti8alw30000qj0t67csf03i" data-title="Generate SSH keys of Github &amp; link to Vscode" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -119,7 +131,7 @@
   
     <a href="/2024/03/07/Vscode-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%95%B4%E7%90%86/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Vscode 常用快捷键整理</div>
+      <div class="article-nav-title">Common Keyboard Shortcuts of Vscode</div>
     </a>
   
 </nav>
@@ -161,11 +173,7 @@
           </li>
         
           <li>
-            <a href="/2024/03/07/Vscode-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%95%B4%E7%90%86/">Vscode 常用快捷键整理</a>
-          </li>
-        
-          <li>
-            <a href="/2024/03/07/hello-world/">My first post</a>
+            <a href="/2024/03/07/Vscode-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%95%B4%E7%90%86/">Common Keyboard Shortcuts of Vscode</a>
           </li>
         
       </ul>

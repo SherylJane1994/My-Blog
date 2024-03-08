@@ -72,7 +72,7 @@
     <article id="post-Generate-SSH-keys-of-Github-link-to-Vscode" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/03/07/Generate-SSH-keys-of-Github-link-to-Vscode/" class="article-date">
-  <time class="dt-published" datetime="2024-03-07T04:38:07.000Z" itemprop="datePublished">2024-03-07</time>
+  <time class="dt-published" datetime="2024-03-07T04:56:24.000Z" itemprop="datePublished">2024-03-07</time>
 </a>
     
   </div>
@@ -91,18 +91,29 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="check-if-already-has-SSH-keys"><a href="#check-if-already-has-SSH-keys" class="headerlink" title="check if already has SSH keys"></a>check if already has SSH keys</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">ls // show list of this file</span><br></pre></td></tr></table></figure>
-
-<h3 id="generate-a-new-SSH-key"><a href="#generate-a-new-SSH-key" class="headerlink" title="generate a new SSH key"></a>generate a new SSH key</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xx@xx.com&quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="get-the-SSH-key"><a href="#get-the-SSH-key" class="headerlink" title="get the SSH key"></a>get the SSH key</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure>
-
-<h3 id="go-to-the-github-and-add-the-SSH-key"><a href="#go-to-the-github-and-add-the-SSH-key" class="headerlink" title="go to the github and add the SSH key"></a>go to the github and add the SSH key</h3><p><img src="/images/image.png" alt="add the SSH key"></p>
+        <ol>
+<li><p>check if already has SSH keys</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">ls // show list of this file</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>generate a new SSH key</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xx@xx.com&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>get the SSH key</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>go to the github and add the SSH key<br><img src="/imgs/addSSHKey.png" alt="add the SSH key"></p>
+</li>
+<li><p>log in github account to vscode</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config -- global user.name &quot;xxx&quot;</span><br><span class="line">git config -- global user.email &quot;xxx@gmail.com&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>click settings sync button &amp; sign in<br><img src="/imgs/signIn.png" alt="sign in"></p>
+</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/07/Generate-SSH-keys-of-Github-link-to-Vscode/" data-id="cltgr09ua0000cb0tb4n3cagj" data-title="Generate SSH keys of Github &amp; link to Vscode" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/07/Generate-SSH-keys-of-Github-link-to-Vscode/" data-id="clti8alw30000qj0t67csf03i" data-title="Generate SSH keys of Github &amp; link to Vscode" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -128,7 +139,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/03/07/Vscode-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%95%B4%E7%90%86/">Vscode 常用快捷键整理</a>
+      <a class="p-name article-title" href="/2024/03/07/Vscode-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%95%B4%E7%90%86/">Common Keyboard Shortcuts of Vscode</a>
     </h1>
   
 
@@ -145,58 +156,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/07/Vscode-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%95%B4%E7%90%86/" data-id="cltgpj6r50000rg0tcnaw4vjn" data-title="Vscode 常用快捷键整理" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/03/07/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2024-03-07T02:24:37.691Z" itemprop="datePublished">2024-03-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/03/07/hello-world/">My first post</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/07/hello-world/" data-id="cltgp9gxg0000k70t7tcr08hy" data-title="My first post" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/07/Vscode-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%95%B4%E7%90%86/" data-id="clti8alw90001qj0t24jkc1yr" data-title="Common Keyboard Shortcuts of Vscode" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -243,11 +203,7 @@
           </li>
         
           <li>
-            <a href="/2024/03/07/Vscode-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%95%B4%E7%90%86/">Vscode 常用快捷键整理</a>
-          </li>
-        
-          <li>
-            <a href="/2024/03/07/hello-world/">My first post</a>
+            <a href="/2024/03/07/Vscode-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%95%B4%E7%90%86/">Common Keyboard Shortcuts of Vscode</a>
           </li>
         
       </ul>
